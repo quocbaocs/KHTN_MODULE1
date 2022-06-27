@@ -29,6 +29,7 @@ public class FrmShopping extends JFrame {
 	private JPanel contentPane;
 	private  Product[] list = new Product[4];
 	private JLabel lblProduct1, lblProduct2, lblProduct3, lblProduct4;
+	
 	public static Product[] listCart = new Product[0];
 
 	/**
@@ -135,8 +136,6 @@ public class FrmShopping extends JFrame {
 	}
 
 	private void mouseClickedLabel(MouseEvent evt) {
-
-		System.out.println(listCart.length);
 		// TODO Auto-generated method stub
 		Component component = evt.getComponent();
 		if (component instanceof JLabel) {
