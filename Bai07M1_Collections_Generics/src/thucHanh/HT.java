@@ -27,6 +27,12 @@ public class HT<T> {
 		return String.format("Chu vi :%.2f, Dien tich: %.2f", this.chuVi(), this.dientich());
 	}
 
+	public static <E> void inMang(E[] arr) {
+		for (E x : arr) {
+			System.out.print(x + " ");
+		}
+	}
+
 	public static void main(String[] args) {
 		HT<Integer> ht = new HT<Integer>(5);
 		System.out.println(ht.xuat());
@@ -34,7 +40,14 @@ public class HT<T> {
 		System.out.println(ht1.xuat());
 		HT<Double> ht2 = new HT<Double>(8.5);
 		System.out.println(ht2.xuat());
-		
-		HT ht5 = new HT(5);
+
+//		HT ht5 = new HT(5);//
+
+		System.out.println("Mang a ");
+		Integer[] a = { 1, 5, 3, 2, 4 };
+		inMang(a);
+		Double[] b = { 5.1, 6.2, 7.5, 8.3, 9.6 };
+		inMang(b);
+
 	}
 }
