@@ -2,7 +2,6 @@ package thucHanh;
 
 import java.awt.Component;
 import java.awt.EventQueue;
-import java.awt.Image;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -24,6 +23,7 @@ public class FrmHinhTrongTable extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable table;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -45,31 +45,6 @@ public class FrmHinhTrongTable extends JFrame {
 	 * Create the frame.
 	 */
 	public FrmHinhTrongTable() {
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowOpened(WindowEvent e) {
-				table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
-
-					@Override
-					public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
-							boolean hasFocus, int row, int column) {
-						// TODO Auto-generated method stub
-						ImageIcon icon = new ImageIcon(value.toString());
-						JLabel lb = new JLabel();
-						lb.setHorizontalAlignment(JLabel.CENTER);
-						lb.setIcon(icon);
-						return lb;
-					}
-
-				});
-				table.setRowHeight(80);
-				table.repaint();
-				
-//				CellRenderer renderer = new CellRenderer();
-//				table.getColumnModel().getColumn(2).setCellRenderer(renderer);
-//				table.repaint();
-			}
-		});
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 655, 480);
 		contentPane = new JPanel();
@@ -80,7 +55,7 @@ public class FrmHinhTrongTable extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 11, 619, 419);
 		contentPane.add(scrollPane);
-	
+
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 				new Object[][] { { "L\u00EA v\u0103n th\u1EAFng", "0123456789", "src/HinhAnh/contact/aman.jpg" },
@@ -90,5 +65,37 @@ public class FrmHinhTrongTable extends JFrame {
 		table.getColumnModel().getColumn(0).setPreferredWidth(125);
 		table.getColumnModel().getColumn(1).setPreferredWidth(186);
 		scrollPane.setViewportView(table);
+
+		scrollPane.setRowHeaderView(lblNewLabel);
+
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowOpened(WindowEvent e) {
+				table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
+
+					@Override
+					public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+							boolean hasFocus, int row, int column) {
+						// TODO Auto-generated method stub
+						javax.swing.ImageIcon icon = new javax.swing.ImageIcon(value.toString());
+
+						JLabel lb = new JLabel();
+						icon.setImage(icon.getImage().getScaledInstance(70, 70, java.awt.Image.SCALE_SMOOTH));
+
+						lb.setHorizontalAlignment(JLabel.CENTER);
+
+						lb.setIcon(icon);
+						return lb;
+					}
+
+				});
+				table.setRowHeight(80);
+				table.repaint();
+
+//				CellRenderer renderer = new CellRenderer();
+//				table.getColumnModel().getColumn(2).setCellRenderer(renderer);
+//				table.repaint();
+			}
+		});
 	}
 }
