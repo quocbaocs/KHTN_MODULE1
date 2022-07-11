@@ -1,5 +1,5 @@
 ##Quy tắc lập trình Java 
-#Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
+Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
 
 #Lập trình tập tin: 
 Bước 1: mở tập tin để đọc/ghi
