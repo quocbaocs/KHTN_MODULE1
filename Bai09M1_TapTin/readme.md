@@ -25,3 +25,9 @@ Bước 3: đóng tập tin
 	12. BufferedOutpuStream 	byte
 	13. BufferedReader		char
 	14. BufferedWriter		char
+	
+#Các lớp đường dẫn tập tin
+	15. Path
+	16. Paths (Tiện ích)
+	17. File 
+	18. Files (Tiện ích)
