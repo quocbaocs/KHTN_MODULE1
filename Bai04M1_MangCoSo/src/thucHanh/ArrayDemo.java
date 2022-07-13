@@ -1,4 +1,4 @@
-package bai4;
+package thucHanh;
 
 import java.util.Arrays;
 

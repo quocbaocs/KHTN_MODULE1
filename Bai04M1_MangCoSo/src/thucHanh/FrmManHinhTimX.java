@@ -1,4 +1,4 @@
-package bai4;
+package thucHanh;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -117,7 +117,7 @@ public class FrmManHinhTimX extends JFrame {
 				kq += (xLonHon(x, mang)) ? "X lớn hơn tất cả" : "X không lớn hơn tất cả";
 				kq += "\n";
 
-				kq += "X nhỏ hơn: " + xNhoHon(x, mang);
+				kq += "X nh�? hơn: " + xNhoHon(x, mang);
 				txtMangKQ.setText(kq);
 
 			}

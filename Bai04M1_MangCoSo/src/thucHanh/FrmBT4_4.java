@@ -1,4 +1,4 @@
-package bai4;
+package thucHanh;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

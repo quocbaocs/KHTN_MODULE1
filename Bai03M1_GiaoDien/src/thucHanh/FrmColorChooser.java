@@ -1,4 +1,4 @@
-package bai3;
+package thucHanh;
 
 import java.awt.Color;
 import java.awt.EventQueue;

@@ -1,4 +1,4 @@
-package bai4;
+package thucHanh;
 
 public class Person implements Comparable<Person> {
 	private String name;

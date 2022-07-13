@@ -1,4 +1,4 @@
-package bai4;
+package thucHanh;
 
 public class Student {
 	private String name;
