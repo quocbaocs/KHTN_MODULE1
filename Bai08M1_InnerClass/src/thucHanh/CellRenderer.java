@@ -32,6 +32,7 @@ public class CellRenderer extends JLabel implements TableCellRenderer {
 		ImageIcon icon = new ImageIcon(value.toString());
 		JLabel lb = new JLabel();
 		lb.setHorizontalAlignment(JLabel.CENTER);
+		icon.setImage(icon.getImage().getScaledInstance(height, width, java.awt.Image.SCALE_SMOOTH));
 		lb.setIcon(icon);
 		return lb;
 	}
