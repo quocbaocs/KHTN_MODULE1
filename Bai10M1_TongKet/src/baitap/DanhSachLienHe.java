@@ -57,7 +57,7 @@ public class DanhSachLienHe implements Serializable {
 	}
 
 	public boolean suaThongTinLienHe(String dt, LienHe lhNew) {
-		LienHe lh = new LienHe();
+		LienHe lh ;
 		for (int i = 0; i < ds.size(); i++) {
 			if (ds.get(i).getDtdd().contains(dt.trim())) {
 				lh = ds.get(i);

@@ -123,7 +123,7 @@ public class FrmCapNhatXoaLienhe extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFileChooser openFile = new JFileChooser(
-						"C:\\Users\\Virus\\git\\KHTN_MODULE1\\Bai09M1_TapTin\\src\\HinhAnh\\contact\\");
+						"src/HinhAnh/contact/");
 				openFile.showOpenDialog(null);
 				File file = openFile.getSelectedFile();
 				String filepath = file.getAbsolutePath();
@@ -154,7 +154,8 @@ public class FrmCapNhatXoaLienhe extends JFrame {
 				String hoTen = txtTen.getText();
 				String dtdd = txtDTDD.getText();
 				String hinhAnh = f.getName();
-				System.out.println(hinhAnh);
+//				System.out.println(hinhAnh);
+				
 				LienHe h = new LienHe(hoTen, dtdd, hinhAnh);
 				ds.suaThongTinLienHe(dtdd, h);
 				FileOutputStream out;
@@ -163,6 +164,7 @@ public class FrmCapNhatXoaLienhe extends JFrame {
 					ObjectOutputStream oos = new ObjectOutputStream(out);
 					oos.writeObject(ds);
 					oos.close();
+					out.close();
 				} catch (IOException ex) {
 					// TODO Auto-generated catch block
 					ex.printStackTrace();
