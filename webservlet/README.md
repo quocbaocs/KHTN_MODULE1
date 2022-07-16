@@ -1,16 +1,16 @@
-##URL						Servlet							JSP
+## URL						Servlet							JSP
 +/article/list				ArticleListServlet				/jsp/article/list.jsp
 +/article/new				ArticleNewSerVlet				/jsp/article/form-new.jsp
 +/article/edit?id=			ArticleEditServlet				/jsp/article/form-edit.jsp
 +/article/view?id=			ArticleDetailServlet			/jsp/article/detail.jsp
 
 
-##Filter
+## Filter
 -	url mapping 
 -	request --> Filter --> Filter --> Servlet 
 				|FilterChain|
 
-##Listener
+## Listener
 - event binding
 	+	Web Application(Context)'s state , object, data
 1.	implements Listener interface
@@ -48,7 +48,7 @@ Storage save object, config value, data as "Attribute's"
 Java 	
 	Controller -> Service -> DAO(Repository)
 
-##Dispatcher Servlet as Front Controller
+## Dispatcher Servlet as Front Controller
 prev : request URL -> Servlet ( one by one )
 	+	code lap lai. rut ngan nhat co the
 	+	request , response
