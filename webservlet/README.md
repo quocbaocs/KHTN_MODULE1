@@ -1,8 +1,8 @@
 ## URL						Servlet							JSP
-+/article/list				ArticleListServlet				/jsp/article/list.jsp
-+/article/new				ArticleNewSerVlet				/jsp/article/form-new.jsp
-+/article/edit?id=			ArticleEditServlet				/jsp/article/form-edit.jsp
-+/article/view?id=			ArticleDetailServlet			/jsp/article/detail.jsp
++ /article/list				ArticleListServlet				/jsp/article/list.jsp
++ /article/new				ArticleNewSerVlet				/jsp/article/form-new.jsp
++ /article/edit?id=			ArticleEditServlet				/jsp/article/form-edit.jsp
++ /article/view?id=			ArticleDetailServlet			/jsp/article/detail.jsp
 
 
 ## Filter
