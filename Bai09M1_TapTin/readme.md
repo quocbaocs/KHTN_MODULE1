@@ -1,13 +1,13 @@
-##Quy tắc lập trình Java 
+## Quy tắc lập trình Java 
 Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
 
-#Lập trình tập tin: 
+# Lập trình tập tin: 
 Bước 1: mở tập tin để đọc/ghi
 Bước 2: đọc/ghi tập tin
 Bước 3: đóng tập tin
 
-##Các lớp đọc ghi tập tin 
-#Các lớp đọc tập tin
+## Các lớp đọc ghi tập tin 
+# Các lớp đọc tập tin
 	1. FileInputStream đọc 		byte<- byte
 	2. FileReader đọc ghi kí tự 	char<-char
 	3. Scanner  đọc kiểu 		type<- ASCII
@@ -20,13 +20,13 @@ Bước 3: đóng tập tin
 	9.DataOutputStream 		type <- type
 	10.ObjectOutputStream 		object <- object  
 
-#Các lớp làm việc với bufer
+# Các lớp làm việc với bufer
 	11. BufferdInputStream 		byte
 	12. BufferedOutpuStream 	byte
 	13. BufferedReader		char
 	14. BufferedWriter		char
 	
-#Các lớp đường dẫn tập tin
+# Các lớp đường dẫn tập tin
 	15. Path
 	16. Paths (Tiện ích)
 	17. File 
