@@ -5,7 +5,6 @@ Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
 	Bước 1: mở tập tin để đọc/ghi
 	Bước 2: đọc/ghi tập tin
 	Bước 3: đóng tập tin
-
 ## Các lớp đọc ghi tập tin 
 # Các lớp đọc tập tin
 	1. FileInputStream đọc 		byte<- byte
@@ -13,7 +12,7 @@ Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
 	3. Scanner  đọc kiểu 		type<- ASCII
 	4. DataInputStream  		type <- type
 	5. ObjectInputStream 		object <- object  
-#Các lớp ghi tập tin 
+# Các lớp ghi tập tin 
 	6. FileOutputStream 		byte<- byte
 	7. FileWriter 			char<-char
 	8. PrintWriter 			type<- ASCII
