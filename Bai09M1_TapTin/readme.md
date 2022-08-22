@@ -2,9 +2,9 @@
 Lớp -> Đối tượng -> Gọi Phương thức -> Kết quả
 
 # Lập trình tập tin: 
-Bước 1: mở tập tin để đọc/ghi
-Bước 2: đọc/ghi tập tin
-Bước 3: đóng tập tin
+	Bước 1: mở tập tin để đọc/ghi
+	Bước 2: đọc/ghi tập tin
+	Bước 3: đóng tập tin
 
 ## Các lớp đọc ghi tập tin 
 # Các lớp đọc tập tin
